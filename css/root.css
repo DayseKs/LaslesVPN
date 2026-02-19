@@ -1,0 +1,25 @@
+:root {
+  --title-color: #2b2b2b;
+  --text-color: #5a5a5a;
+  --g-color: #646464;
+  --footer-color: #f4f4f4;
+  --w-color: #fff;
+  --primary-color: #f53838;
+  --detail-color: #2bbc28;
+}
+
+.title {
+  color: var(--title-color);
+}
+.text {
+  color: var(--text-color);
+}
+.g {
+  color: var(--g-color);
+}
+.footer-bg {
+  background-color: var(--footer-color);
+}
+.w-color {
+  background-color: var(--w-color);
+}
