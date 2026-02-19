@@ -932,6 +932,9 @@
     gap: 5.625rem;
     z-index: 2;
   }
+  .footer-brand .social-media {
+    cursor: pointer;
+  }
   .footer-container .footer-link {
     white-space: nowrap;
     gap: 3.125rem;

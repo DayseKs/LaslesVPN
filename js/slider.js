@@ -42,9 +42,11 @@ function nextSlider() {
     currentIndex = 0;
   } else {
     currentIndex++;
+    btnNext.classList.add("active");
   }
   showSlider();
   moveSlider();
+  updateButtons();
 }
 
 function prevSlider() {
@@ -54,13 +56,30 @@ function prevSlider() {
   } else {
     currentIndex--;
   }
+  btnPrev.classList.add("active");
+
   showSlider();
   moveSlider();
+  updateButtons();
 }
 
 function moveSlider() {
   let positionSlide = currentIndex * slides[0].clientWidth;
   slideList.style.transform = `translateX(-${positionSlide}px)`;
+}
+
+function updateButtons() {
+  if (currentIndex === 0) {
+    btnPrev.classList.remove("active");
+  } else {
+    btnPrev.classList.add("active");
+  }
+
+  if (currentIndex === slides.length - 1) {
+    btnNext.classList.remove("active");
+  } else {
+    btnNext.classList.add("active");
+  }
 }
 
 btnNext.addEventListener("click", nextSlider);
