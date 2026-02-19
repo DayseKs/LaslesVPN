@@ -62,10 +62,13 @@
     gap: 3.75rem;
   }
   .nav-action .btn-header {
+    background-color: transparent;
+  }
+  .nav-action .btn-header a {
     font-size: 0.9375rem;
     color: var(--title-color);
   }
-  .nav-action .btn-up {
+  .nav-action .btn-up a {
     color: var(--primary-color);
     border: none;
   }
@@ -408,11 +411,12 @@
     display: flex;
     gap: 0.625rem;
   }
-  .nav-action .btn-header {
+  .nav-action .btn-header a {
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    color: var(--title-color);
   }
-  .nav-action .btn-up {
+  .nav-action .btn-up a {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 25px;
@@ -693,17 +697,21 @@
     align-items: center;
     gap: 0.9375rem;
   }
-  .nav-action .btn-header {
+  .nav-action .btn-header a {
     font-size: 1rem;
     padding: 0.5rem 1.375rem;
+    color: var(--title-color);
     border-radius: 25px;
     cursor: pointer;
     transition: 0.4s;
   }
-  .nav-action .btn-in:hover {
+  .nav-action .btn-up a {
+    color: var(--primary-color);
+  }
+  .nav-action .btn-in:hover a {
     background-color: #eeeded8e;
   }
-  .nav-action .btn-up:hover {
+  .nav-action .btn-up:hover a {
     background-color: var(--primary-color);
     color: #fff;
   }
