@@ -195,6 +195,7 @@
   }
   .plans-container .plan {
     padding: 0.6875rem 1.875rem;
+    gap: 1.0625rem;
     border-radius: 10px;
   }
   .plan .plan-image {
